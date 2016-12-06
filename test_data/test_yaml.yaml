@@ -1,0 +1,3 @@
+user:
+  insert: "INSERT INTO product_viewers (user_id, product_id) VALUES ({{ .UserID }},{{ .ProductID }})"
+  get: "select user_id,product_id from product_viewers"
