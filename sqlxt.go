@@ -36,8 +36,8 @@ func (st *SqlxT) Exec(key string, v interface{}) error {
 		return err
 	}
 
-	st.db.Exec(buf.String())
-	return nil
+	_, err = st.db.Exec(buf.String())
+	return err
 }
 
 //Get get row
